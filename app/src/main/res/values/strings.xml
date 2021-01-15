@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Study Cards</string>
+    <string name="add_card">Add a new card</string>
 </resources>
