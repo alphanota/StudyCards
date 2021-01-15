@@ -17,6 +17,7 @@ object DatabaseModule {
     fun providesCardsDb(app: Application) : CardsDb {
         return Room
             .databaseBuilder(app, CardsDb::class.java, "study_cards.db")
+            .createFromAsset("example_data.db")
             .fallbackToDestructiveMigration()
             .build()
     }
